@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/** COMMON CSS STARTS **/
+:root {
+  --font-family: "Josefin Sans", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --text-color: #11161e;
+  --3d-primary-color: #151a32;
+  --comon-colot: #fff;
+  --1st-primary-color: #ff6f61;
+  --paragraph-color: #444;
+  --2nd-primary-color: #ff5645;
+  --background-color: #f1f1f1;
+  --bg: #f1f3f4;
+  --black: #000;
+  --a6aab7: #a6aab7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+span,
+ol {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+}
+/** COMMON CSS ENDS **/
+
+/** NAVBAR CSS STARS **/
+nav.navbar {
+  padding: 20px 0;
+}
+nav.navbar #navContent li {
+  margin: 0 22px;
+}
+nav.navbar #navContent li a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-color);
+}
+nav.navbar #navContent li a.active,
+nav.navbar #navContent li:hover a {
+  color: var(--1st-primary-color);
+}
+.links ul li a {
+  margin: 0 10px;
+}
+.links ul li a span.count {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 17px;
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  background-color: var(--1st-primary-color);
+  display: block;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--comon-colot);
+}
+
+/* DropDrown Starts from here */
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn i {
+  transition: 0.3s;
+  margin: 0;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  color: var(--1st-primary-color);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color: var(--1st-primary-color) !important;
+}
+.show {
+  display: block;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+/* DropDrown ends here */
+
+/* Small Navbar Starts */
+
+.smallNav {
+  padding: 15px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.smallNav .logo img {
+  width: 120px;
+}
+
+.smallNav .menuToggler {
+  color: var(--3d-primary-color);
+  font-size: 20px;
+}
+
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px -8px 24px rgba(149, 157, 165, 0.3);
+  padding: 15px 20px;
+}
+
+.bottomNav ul li a {
+  font-size: 20px;
+  color: black;
+  margin: 0 15px;
+}
+.bottomNav .searchIcon {
+  color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  background-color: var(--1st-primary-color);
+  color: white;
+  box-shadow: rgba(255, 111, 97, 0.8) 0px 8px 24px;
+}
+
+#sidebarPhone {
+  max-width: 80%;
+}
+
+.offcanvas-header img {
+  width: 110px;
+}
+
+.offcanvas-body ul li a {
+  text-decoration: none;
+  color: var(--1st-primary-color);
+  margin-bottom: 10px;
+  display: block;
+  padding: 8px;
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    rgb(234, 234, 255)
+  );
+  border-right: 3px solid #b8b8ff;
+  transition: background-image 0.3s;
+}
+
+/* Small Navbar Ends */
+
+/** NAVBAR CSS ENDS **/
